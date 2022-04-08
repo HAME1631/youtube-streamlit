@@ -1,10 +1,4 @@
-from click import option
-from matplotlib import image
-from matplotlib.pyplot import text
 import streamlit as st
-import numpy as np
-import pandas as pd
-from PIL import Image
 import time 
 
 st.title('Streamlit 入門')
@@ -30,6 +24,10 @@ if button:
 
 expander=st.expander("問い合わせ")
 expander.write("問い合わせ内容をかく")
+expander2 = st.beta_expander("問い合わせ2")
+expander2.write("問い合わせ2の回答")
+expander3=st.expander("問い合わせ3")
+expander3.write("問い合わせ3の回答")
 
 # text =st.text_input("あなたの趣味を教えてください")
 # condition=st.slider("あなたの今の調子は？",0,100,50)
